@@ -12,6 +12,7 @@ package bean;
 public class Producto {
     private String idproducto;
     private int cantidad;
+    private boolean guardado;
 
     public String getIdproducto() {
         return idproducto;
@@ -29,6 +30,12 @@ public class Producto {
         this.cantidad = cantidad;
     }
     
+    public void setGuardado(boolean guardado){
+        this.guardado=guardado;
+    }
     
+    public boolean getGuardado(){
+        return this.guardado;
+    }
     
 }
